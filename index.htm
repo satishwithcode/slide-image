@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    body{
+      background: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container{
+      width: 100%;
+      padding: 90px;
+      padding-bottom: 10px;
+    }
+    .swiper-slide{
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 400px;
+    }
+    .swiper-slide .number{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      opacity: 0.5;
+      text-shadow: 4px 4px 4px rgba(255,255,255,0.5),-5px 0px 4px rgba(255,255,255,0.5);
+      font-size: 100px;
+      font-weight: 900;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url(img/satish-1.jpg);"><div class="number">01</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-2.jpg);"><div class="number">02</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-3.jpg);"><div class="number">03</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-4.jpg);"><div class="number">04</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-5.jpg);"><div class="number">05</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-6.jpg);"><div class="number">06</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-7.jpg);"><div class="number">07</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-8.jpg);"><div class="number">08</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-9.jpg);"><div class="number">09</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-10.jpg);"><div class="number">10</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-11.jpg);"><div class="number">11</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-13.jpeg);"><div class="number">12</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-14.jpg);"><div class="number">13</div></div>
+      <div class="swiper-slide" style="background-image: url(img/satish-15.jpg);"><div class="number">14</div></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      loop:true,
+
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+
+    });
+  </script>
+</body>
+</html>
